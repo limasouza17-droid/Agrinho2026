@@ -46,6 +46,7 @@ As informações e dados apresentados neste projeto foram coletados de fontes co
 *   [2] IPEA. Sistemas integrados na agricultura promovem equilíbrio entre produção e conservação ambiental. Disponível em: [https://www.ipea.gov.br/portal/categorias/45-todas-as-noticias/noticias/13911-sistemas-integrados-na-agricultura-promovem-equilibrio-entre-producao-e-conservacao-ambiental](https://www.ipea.gov.br/portal/categorias/45-todas-as-noticias/noticias/13911-sistemas-integrados-na-agricultura-promovem-equilibrio-entre-producao-e-conservacao-ambiental). Acesso em: 27 mai. 2026.
 *   [3] CROPLIFE BRASIL. Tecnologia na agricultura: produtividade e sustentabilidade. Disponível em: [https://croplifebrasil.org/tecnologia-na-agricultura/](https://croplifebrasil.org/tecnologia-na-agricultura/). Acesso em: 27 mai. 2026.
 
-## ✍️ Autor
+## Autor
 
-Desenvolvido por Manus AI para o Projeto Agrinho 2026.
+Desenvolvido por Maria Helena de Lima Souza 
+aluna do 3° ano ensino médio do Colégio Estadual Barbosa Ferraz 
