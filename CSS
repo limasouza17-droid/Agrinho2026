@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4fff4;
+    color: #333;
+}
+
+.hero {
+    height: 100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 60px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.hero-content {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+}
+
+.hero-content h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.botao {
+    background: #32cd32;
+    color: white;
+    padding: 15px 30px;
+    width: fit-content;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #228b22;
+    transform: scale(1.05);
+}
+
+.secao {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 80px;
+}
+
+.secao img {
+    width: 50%;
+    border-radius: 20px;
+}
+
+.texto {
+    width: 50%;
+}
+
+.texto h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #2e8b57;
+}
+
+.texto p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.reverso {
+    background: #e8ffe8;
+}
+
+.cards {
+    padding: 80px;
+    text-align: center;
+}
+
+.cards h2 {
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: #2e8b57;
+}
+
+.container-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    margin-bottom: 20px;
+    color: #228b22;
+}
+
+.mensagem-final {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #2e8b57, #32cd32);
+    color: white;
+}
+
+.mensagem-final h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.mensagem-final p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    background: white;
+    color: #2e8b57;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #145214;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
