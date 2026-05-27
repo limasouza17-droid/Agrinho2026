@@ -1,4 +1,4 @@
-// DADOS DO QUIZ
+// DADOS DO QUIZ APRIMORADO
 const quizData = [
     {
         question: "Qual foi o valor das exportações do agronegócio brasileiro em 2025?",
@@ -75,6 +75,7 @@ const questionText = document.getElementById('question-text');
 const optionsContainer = document.getElementById('options-container');
 const nextBtn = document.getElementById('next-btn');
 const resultText = document.getElementById('result-text');
+const progressBar = document.getElementById('progress-bar');
 
 // EVENT LISTENERS
 startBtn.addEventListener('click', startQuiz);
@@ -92,6 +93,9 @@ function startQuiz() {
 
 function loadQuestion() {
     const question = quizData[currentQuestion];
+    const progress = ((currentQuestion + 1) / quizData.length) * 100;
+    progressBar.style.width = progress + '%';
+    
     questionText.textContent = `Pergunta ${currentQuestion + 1} de ${quizData.length}: ${question.question}`;
     
     optionsContainer.innerHTML = '';
@@ -109,6 +113,9 @@ function loadQuestion() {
 function selectOption(index, element) {
     const question = quizData[currentQuestion];
     const allOptions = document.querySelectorAll('.option');
+    
+    // Desabilitar cliques após seleção
+    allOptions.forEach(opt => opt.style.pointerEvents = 'none');
     
     allOptions.forEach(opt => opt.classList.remove('selected', 'correct', 'incorrect'));
     
@@ -138,17 +145,23 @@ function showResult() {
     
     const percentage = Math.round((score / quizData.length) * 100);
     let message = '';
+    let emoji = '';
     
     if (percentage === 100) {
-        message = `🏆 Parabéns! Você acertou TODAS as ${quizData.length} questões! Você é um especialista em agronegócio sustentável!`;
+        emoji = '🏆';
+        message = `${emoji} CAMPEÃO! Você acertou TODAS as ${quizData.length} questões! Você é um especialista em agronegócio sustentável! Parabéns! 🎉`;
     } else if (percentage >= 80) {
-        message = `🌟 Excelente! Você acertou ${score} de ${quizData.length} questões (${percentage}%). Conhecimento impressionante!`;
+        emoji = '🌟';
+        message = `${emoji} EXCELENTE! Você acertou ${score} de ${quizData.length} questões (${percentage}%). Conhecimento impressionante! Muito bem! 🎊`;
     } else if (percentage >= 60) {
-        message = `👍 Bom trabalho! Você acertou ${score} de ${quizData.length} questões (${percentage}%). Continue aprendendo sobre sustentabilidade!`;
+        emoji = '👍';
+        message = `${emoji} BOM TRABALHO! Você acertou ${score} de ${quizData.length} questões (${percentage}%). Continue aprendendo sobre sustentabilidade! 📚`;
     } else if (percentage >= 40) {
-        message = `📚 Você acertou ${score} de ${quizData.length} questões (${percentage}%). Estude mais sobre o agronegócio sustentável!`;
+        emoji = '💡';
+        message = `${emoji} VOCÊ ACERTOU ${score} de ${quizData.length} questões (${percentage}%). Estude mais sobre o agronegócio sustentável! Você consegue! 💪`;
     } else {
-        message = `💡 Você acertou ${score} de ${quizData.length} questões (${percentage}%). Visite novamente para aprender mais!`;
+        emoji = '🌱';
+        message = `${emoji} VOCÊ ACERTOU ${score} de ${quizData.length} questões (${percentage}%). Visite novamente para aprender mais sobre o agro! 🚜`;
     }
     
     resultText.textContent = message;
@@ -157,10 +170,11 @@ function showResult() {
 // FUNÇÃO DE MENSAGEM FINAL
 function mostrarMensagem() {
     const mensagemDiv = document.getElementById('mensagem');
-    const novaMsg = "O futuro do campo depende da união entre inovação, sustentabilidade e pessoas. Cada decisão que tomamos hoje molda o amanhã de nossas comunidades rurais. Juntos, podemos construir um agronegócio que alimenta o mundo e preserva a natureza! 🌱🚜🌍";
+    const novaMsg = "🌍 O futuro do campo depende da união entre inovação, sustentabilidade e pessoas. Cada decisão que tomamos hoje molda o amanhã de nossas comunidades rurais. Juntos, podemos construir um agronegócio que alimenta o mundo e preserva a natureza para as gerações futuras! 🌱🚜💚";
     
     if (mensagemDiv.textContent.includes('futuro do campo depende')) {
-        mensagemDiv.textContent = "Clique no botão abaixo";
+        mensagemDiv.textContent = "O futuro do campo depende da união entre inovação, sustentabilidade e pessoas. O agro forte é aquele que produz com respeito à natureza, gerando alimento, emprego e esperança para as gerações futuras.";
+        mensagemDiv.style.animation = 'none';
     } else {
         mensagemDiv.textContent = novaMsg;
         mensagemDiv.style.animation = 'fadeInElement 0.8s ease-out';
@@ -200,7 +214,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// EFEITO DE DIGITAÇÃO NA PÁGINA (Opcional - melhora a experiência)
+// EFEITO DE PARALLAX NO HERO
+window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+    const heroContent = document.querySelector('.hero-content');
+    if (heroContent) {
+        heroContent.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+    }
+});
+
+// LOG DE CARREGAMENTO
 window.addEventListener('load', () => {
-    console.log('🌱 Agrinho 2026 carregado com sucesso!');
+    console.log('🌱 Agrinho 2026 - Versão Visual Premium carregado com sucesso!');
+    console.log('🚀 Projeto pronto para impressionar os jurados!');
 });
