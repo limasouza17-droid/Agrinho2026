@@ -1,134 +1,51 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+# 🌱 Projeto Agrinho 2026: Agro Forte, Futuro Sustentável
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho 2026</title>
+Este projeto foi desenvolvido para o concurso Agrinho 2026, com o tema **"Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"**. O objetivo é apresentar, de forma interativa e educativa, a importância do agronegócio brasileiro aliado a práticas e tecnologias sustentáveis para garantir a segurança alimentar e a preservação dos recursos naturais para as futuras gerações.
 
-    <link rel="stylesheet" href="style.css">
+## 🚀 Funcionalidades
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
+O site apresenta as seguintes seções e funcionalidades:
 
-<body>
+*   **Header Interativo:** Navegação fácil entre as seções do site.
+*   **Sobre:** Explora a relevância do agronegócio no Brasil e a necessidade de equilíbrio entre produção e preservação ambiental.
+*   **Tecnologia:** Destaca as inovações tecnológicas no campo, como agricultura de precisão, drones, sensores, bioinsumos e ILPF (Integração Lavoura-Pecuária-Floresta), que impulsionam a produtividade de forma sustentável.
+*   **Sustentabilidade:** Aborda pilares da sustentabilidade no agro, como economia de água, preservação ambiental e energia limpa.
+*   **Quiz Interativo:** Um quiz para testar os conhecimentos do usuário sobre agronegócio sustentável, tornando o aprendizado mais dinâmico e divertido.
+*   **Mensagem Final:** Uma mensagem inspiradora sobre o futuro do agro em nossas mãos.
+*   **Responsividade:** Design adaptável para diferentes tamanhos de tela (desktops, tablets e smartphones).
 
-    <header class="hero">
+## 🛠️ Tecnologias Utilizadas
 
-        <nav>
-            <h2>🌱 AGRINHO 2026</h2>
+*   **HTML5:** Estrutura semântica do conteúdo.
+*   **CSS3:** Estilização e layout responsivo.
+*   **JavaScript:** Interatividade, incluindo a lógica do quiz e a função de mensagem.
 
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#tecnologia">Tecnologia</a></li>
-                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
-            </ul>
-        </nav>
+## 💡 Como Executar o Projeto
 
-        <div class="hero-content">
-            <h1>Agro forte,<br> futuro sustentável</h1>
+Para visualizar e interagir com o projeto localmente, siga os passos abaixo:
 
-            <p>
-                Equilíbrio entre produção e meio ambiente
-            </p>
+1.  **Clone o Repositório:**
+    ```bash
+    git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
+    ```
+    (Substitua `SEU_USUARIO` e `NOME_DO_REPOSITORIO` pelos seus dados do GitHub)
 
-            <a href="#sobre" class="botao">
-                Explorar Projeto
-            </a>
-        </div>
+2.  **Navegue até a Pasta do Projeto:**
+    ```bash
+    cd NOME_DO_REPOSITORIO
+    ```
 
-    </header>
+3.  **Abra o Arquivo `index.html`:**
+    Simplesmente abra o arquivo `index.html` em seu navegador web preferido (Google Chrome, Firefox, Edge, etc.).
 
-    <section id="sobre" class="secao">
+## 📚 Referências
 
-        <div class="texto">
-            <h2>🌾 O Agro Move o Mundo</h2>
+As informações e dados apresentados neste projeto foram coletados de fontes confiáveis:
 
-            <p>
-                O agronegócio é responsável pela produção de alimentos,
-                geração de empregos e desenvolvimento econômico.
-                Porém, o futuro depende do equilíbrio entre produção e preservação ambiental.
-            </p>
-        </div>
+*   [1] GOV.BR. Agronegócio brasileiro fecha 2025 com recorde em exportações de US$ 169 bilhões. Disponível em: [https://www.gov.br/agricultura/pt-br/assuntos/noticias/agronegocio-brasileiro-fecha-2025-com-recorde-em-exportacoes-de-us-169-bilhoes-e-superavit-de-us-149-07-bilhoes](https://www.gov.br/agricultura/pt-br/assuntos/noticias/agronegocio-brasileiro-fecha-2025-com-recorde-em-exportacoes-de-us-169-bilhoes-e-superavit-de-us-149-07-bilhoes). Acesso em: 27 mai. 2026.
+*   [2] IPEA. Sistemas integrados na agricultura promovem equilíbrio entre produção e conservação ambiental. Disponível em: [https://www.ipea.gov.br/portal/categorias/45-todas-as-noticias/noticias/13911-sistemas-integrados-na-agricultura-promovem-equilibrio-entre-producao-e-conservacao-ambiental](https://www.ipea.gov.br/portal/categorias/45-todas-as-noticias/noticias/13911-sistemas-integrados-na-agricultura-promovem-equilibrio-entre-producao-e-conservacao-ambiental). Acesso em: 27 mai. 2026.
+*   [3] CROPLIFE BRASIL. Tecnologia na agricultura: produtividade e sustentabilidade. Disponível em: [https://croplifebrasil.org/tecnologia-na-agricultura/](https://croplifebrasil.org/tecnologia-na-agricultura/). Acesso em: 27 mai. 2026.
 
-        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200"
-            alt="Plantação">
+## ✍️ Autor
 
-    </section>
-
-    <section id="tecnologia" class="secao reverso">
-
-        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200"
-            alt="Tecnologia no campo">
-
-        <div class="texto">
-            <h2>🚜 Tecnologia no Campo</h2>
-
-            <p>
-                Drones, sensores, irrigação inteligente e máquinas modernas
-                ajudam os produtores a aumentar a produtividade
-                sem prejudicar o meio ambiente.
-            </p>
-        </div>
-
-    </section>
-
-    <section id="sustentabilidade" class="cards">
-
-        <h2>🌎 Sustentabilidade</h2>
-
-        <div class="container-cards">
-
-            <div class="card">
-                <h3>💧 Economia de Água</h3>
-                <p>
-                    Técnicas modernas evitam desperdícios e preservam os rios.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>🌳 Preservação</h3>
-                <p>
-                    Proteger florestas e animais é essencial para o futuro.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>☀️ Energia Limpa</h3>
-                <p>
-                    Energia solar e sustentável ajudam o planeta.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="mensagem-final">
-
-        <h2>O Futuro Está em Nossas Mãos</h2>
-
-        <p id="mensagem">
-            Clique no botão abaixo
-        </p>
-
-        <button onclick="mostrarMensagem()">
-            Mostrar Mensagem
-        </button>
-
-    </section>
-
-    <footer>
-
-        <p>
-            Projeto desenvolvido para o Agrinho 2026 🌱
-        </p>
-
-    </footer>
-
-    <script src="script.js"></script>
-
-</body>
-
-</html>
+Desenvolvido por Manus AI para o Projeto Agrinho 2026.

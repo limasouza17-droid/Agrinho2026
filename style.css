@@ -1,0 +1,335 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #28a745; /* Verde Agrinho */
+}
+
+a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #218838;
+    text-decoration: none;
+}
+
+/* Header e Navegação */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1920') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero nav h2 {
+    margin: 0;
+    color: #fff;
+}
+
+.hero nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.hero nav ul li {
+    margin-left: 20px;
+}
+
+.hero nav ul li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero-content {
+    margin-top: 50px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Seções */
+.secao {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.secao:nth-of-type(even) {
+    background-color: #e9f7ef; /* Um verde mais claro para alternar */
+}
+
+.secao .texto {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.secao.reverso .texto {
+    padding-right: 0;
+    padding-left: 40px;
+}
+
+.secao img {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.secao.reverso img {
+    order: -1;
+}
+
+.secao h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.secao p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Cards de Sustentabilidade */
+.cards {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.cards h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 30px;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: #28a745;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Quiz Section */
+.quiz-section {
+    flex-direction: column;
+    text-align: center;
+}
+
+#quiz-container {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+    background-color: #e9f7ef;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.question {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.options label {
+    display: block;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+
+.options label:hover {
+    background-color: #d4edda;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+}
+
+#quiz-results {
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Mensagem Final */
+.mensagem-final {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.mensagem-final h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.mensagem-final p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+.references {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 0.85em;
+    color: #666;
+}
+
+.references h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.references p {
+    margin-bottom: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero nav {
+        flex-direction: column;
+        position: static;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .hero nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .hero nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .secao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .secao.reverso {
+        flex-direction: column;
+    }
+
+    .secao .texto,
+    .secao.reverso .texto {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .secao img,
+    .secao.reverso img {
+        max-width: 80%;
+        order: 0;
+    }
+
+    .container-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+}
