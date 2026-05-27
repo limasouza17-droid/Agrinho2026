@@ -4,45 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrinho 2026: Agro Forte, Futuro Sustentável</title>
-    <link rel="stylesheet" href="style_visual.css">
+    <link rel="stylesheet" href="style_novo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- NAVEGAÇÃO FIXA -->
+<!-- NAVEGAÇÃO -->
 <nav class="navbar">
     <div class="nav-container">
         <div class="logo">🌱 AGRINHO 2026</div>
         <ul class="nav-links">
             <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#galeria">Galeria</a></li>
-            <li><a href="#problema-solucao">Soluções</a></li>
-            <li><a href="#evolucao">Evolução</a></li>
+            <li><a href="#problema-solucao">Problema x Solução</a></li>
+            <li><a href="#linha-tempo">Evolução</a></li>
+            <li><a href="#tecnologia">Tecnologia</a></li>
+            <li><a href="#sustentabilidade">Sustentabilidade</a></li>
             <li><a href="#quiz">Quiz</a></li>
         </ul>
     </div>
 </nav>
 
-<!-- HERO SECTION - MEGA IMPACTANTE -->
+<!-- HERO SECTION - IMPACTANTE -->
 <header class="hero">
-    <video autoplay muted loop class="hero-video">
-        <source src="https://videos.unsplash.com/video-1500382017468-9049fed747ef?q=80&w=1920" type="video/mp4">
-    </video>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-        <h1 class="hero-title">🌾 Agro Forte</h1>
-        <h2 class="hero-subtitle">Futuro Sustentável</h2>
-        <p class="hero-description">Tecnologia e sustentabilidade transformando o campo brasileiro</p>
-        <a href="#sobre" class="btn btn-primary pulse">Explorar Agora</a>
+    <div class="hero-background">
+        <div class="hero-shapes shape-1"></div>
+        <div class="hero-shapes shape-2"></div>
+        <div class="hero-shapes shape-3"></div>
     </div>
-    <div class="hero-scroll">↓</div>
+    <div class="hero-content">
+        <h1 class="hero-title">Agro Forte, Futuro Sustentável</h1>
+        <p class="hero-subtitle">Tecnologia e sustentabilidade transformando o campo brasileiro</p>
+        <p class="hero-description">Equilíbrio entre produção, inovação e preservação ambiental</p>
+        <a href="#sobre" class="btn btn-primary">Saiba Mais</a>
+    </div>
 </header>
 
-<!-- SEÇÃO SOBRE COM IMAGEM -->
+<!-- SEÇÃO SOBRE -->
 <section id="sobre" class="secao sobre-secao">
     <div class="container">
-        <div class="content-grid">
+        <div class="content-wrapper">
             <div class="texto fade-in">
                 <h2>🌾 O Agro Move o Mundo</h2>
                 <p>
@@ -57,170 +58,95 @@
                 </p>
                 <p>
                     Atualmente, <strong>65% do território brasileiro permanece preservado</strong> com vegetação nativa ou áreas protegidas, 
-                    enquanto apenas 31% é destinado ao uso agropecuário.
+                    enquanto apenas 31% é destinado ao uso agropecuário — um percentual sem paralelo entre os grandes produtores de alimentos do mundo.
                 </p>
             </div>
-            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=500&h=500&fit=crop" alt="Plantação sustentável" class="secao-img fade-in">
-        </div>
-    </div>
-</section>
-
-<!-- GALERIA VISUAL -->
-<section id="galeria" class="secao galeria-secao">
-    <div class="container">
-        <h2 class="secao-title">📸 Tecnologia e Inovação no Campo</h2>
-        <p class="secao-subtitle">Veja como a modernidade transforma a agricultura</p>
-        
-        <div class="galeria-grid">
-            <div class="galeria-item fade-in" style="animation-delay: 0s;">
-                <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?q=80&w=400&h=400&fit=crop" alt="Drone agrícola">
-                <div class="galeria-overlay">
-                    <h3>🚁 Drones</h3>
-                    <p>Monitoramento de plantações em tempo real</p>
-                </div>
-            </div>
-            
-            <div class="galeria-item fade-in" style="animation-delay: 0.1s;">
-                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=400&h=400&fit=crop" alt="Irrigação inteligente">
-                <div class="galeria-overlay">
-                    <h3>💧 Irrigação Inteligente</h3>
-                    <p>Economia de água com sensores</p>
-                </div>
-            </div>
-            
-            <div class="galeria-item fade-in" style="animation-delay: 0.2s;">
-                <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?q=80&w=400&h=400&fit=crop" alt="Máquinas modernas">
-                <div class="galeria-overlay">
-                    <h3>🚜 Máquinas Modernas</h3>
-                    <p>Automação e eficiência no trabalho</p>
-                </div>
-            </div>
-            
-            <div class="galeria-item fade-in" style="animation-delay: 0.3s;">
-                <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=400&h=400&fit=crop" alt="Plantação sustentável">
-                <div class="galeria-overlay">
-                    <h3>🌱 Plantio Direto</h3>
-                    <p>Preservação do solo e biodiversidade</p>
-                </div>
-            </div>
-            
-            <div class="galeria-item fade-in" style="animation-delay: 0.4s;">
-                <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?q=80&w=400&h=400&fit=crop" alt="Energia solar">
-                <div class="galeria-overlay">
-                    <h3>☀️ Energia Solar</h3>
-                    <p>Sustentabilidade energética nas fazendas</p>
-                </div>
-            </div>
-            
-            <div class="galeria-item fade-in" style="animation-delay: 0.5s;">
-                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=400&h=400&fit=crop" alt="Inteligência artificial">
-                <div class="galeria-overlay">
-                    <h3>🤖 Inteligência Artificial</h3>
-                    <p>Análise de dados para melhor produção</p>
-                </div>
-            </div>
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=600" alt="Plantação sustentável" class="secao-img fade-in">
         </div>
     </div>
 </section>
 
 <!-- SEÇÃO PROBLEMA x SOLUÇÃO -->
-<section id="problema-solucao" class="secao problema-secao">
+<section id="problema-solucao" class="secao problema-solucao">
     <div class="container">
         <h2 class="secao-title">⚖️ Problema x Solução</h2>
         <p class="secao-subtitle">Como o agronegócio sustentável resolve os principais desafios</p>
         
-        <div class="solucoes-grid">
-            <div class="solucao-card fade-in" style="animation-delay: 0s;">
-                <div class="solucao-icon">💧</div>
-                <h3>Desperdício de Água</h3>
-                <p class="problema">Problema: Consumo excessivo de água</p>
-                <div class="arrow">↓</div>
-                <p class="solucao">Solução: Irrigação Inteligente com Sensores</p>
-                <p class="resultado">✅ Redução de até 40% no consumo</p>
-            </div>
-            
-            <div class="solucao-card fade-in" style="animation-delay: 0.1s;">
-                <div class="solucao-icon">🌍</div>
-                <h3>Emissões de CO₂</h3>
-                <p class="problema">Problema: Gases de efeito estufa</p>
-                <div class="arrow">↓</div>
-                <p class="solucao">Solução: Biocombustíveis e ILPF</p>
-                <p class="resultado">✅ 200 milhões de toneladas evitadas</p>
-            </div>
-            
-            <div class="solucao-card fade-in" style="animation-delay: 0.2s;">
-                <div class="solucao-icon">🐛</div>
-                <h3>Pragas e Doenças</h3>
-                <p class="problema">Problema: Perda de colheitas</p>
-                <div class="arrow">↓</div>
-                <p class="solucao">Solução: Bioinsumos e Manejo Integrado</p>
-                <p class="resultado">✅ Redução de 30% em químicos</p>
-            </div>
-            
-            <div class="solucao-card fade-in" style="animation-delay: 0.3s;">
-                <div class="solucao-icon">🌳</div>
-                <h3>Desmatamento</h3>
-                <p class="problema">Problema: Perda de florestas</p>
-                <div class="arrow">↓</div>
-                <p class="solucao">Solução: Produtividade (Efeito Poupa-Terra)</p>
-                <p class="resultado">✅ Produção 5x maior na mesma área</p>
-            </div>
-            
-            <div class="solucao-card fade-in" style="animation-delay: 0.4s;">
-                <div class="solucao-icon">👷</div>
-                <h3>Trabalho Pesado</h3>
-                <p class="problema">Problema: Esforço físico excessivo</p>
-                <div class="arrow">↓</div>
-                <p class="solucao">Solução: Automação e IA</p>
-                <p class="resultado">✅ Maior segurança e eficiência</p>
-            </div>
-            
-            <div class="solucao-card fade-in" style="animation-delay: 0.5s;">
-                <div class="solucao-icon">💰</div>
-                <h3>Rentabilidade</h3>
-                <p class="problema">Problema: Custos altos</p>
-                <div class="arrow">↓</div>
-                <p class="solucao">Solução: Tecnologia de Precisão</p>
-                <p class="resultado">✅ Aumento de até 25% em lucro</p>
-            </div>
+        <div class="tabela-container fade-in">
+            <table class="tabela-problema">
+                <thead>
+                    <tr>
+                        <th>🔴 Problema</th>
+                        <th>✅ Solução Sustentável</th>
+                        <th>📊 Resultado Real</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="card-row">
+                        <td><strong>Desperdício de Água</strong></td>
+                        <td>Irrigação Inteligente com Sensores</td>
+                        <td>Otimização hídrica e preservação de rios</td>
+                    </tr>
+                    <tr class="card-row">
+                        <td><strong>Emissões de CO₂</strong></td>
+                        <td>Biocombustíveis e ILPF</td>
+                        <td>200 milhões de toneladas de CO₂ evitadas</td>
+                    </tr>
+                    <tr class="card-row">
+                        <td><strong>Pragas e Doenças</strong></td>
+                        <td>Bioinsumos e Manejo Integrado</td>
+                        <td>Redução de químicos e solo mais saudável</td>
+                    </tr>
+                    <tr class="card-row">
+                        <td><strong>Desmatamento</strong></td>
+                        <td>Produtividade (Efeito Poupa-Terra)</td>
+                        <td>Produção 5x maior na mesma área desde 1985</td>
+                    </tr>
+                    <tr class="card-row">
+                        <td><strong>Trabalho Pesado</strong></td>
+                        <td>Automação e Inteligência Artificial</td>
+                        <td>Maior segurança e eficiência operacional</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </section>
 
-<!-- SEÇÃO EVOLUÇÃO (LINHA DO TEMPO) -->
-<section id="evolucao" class="secao evolucao-secao">
+<!-- LINHA DO TEMPO -->
+<section id="linha-tempo" class="secao linha-tempo">
     <div class="container">
         <h2 class="secao-title">📈 A Evolução do Campo Brasileiro</h2>
         <p class="secao-subtitle">De 1970 até a Agricultura 5.0</p>
         
-        <div class="evolucao-timeline">
-            <div class="evolucao-item fade-in">
-                <div class="evolucao-year">1970</div>
-                <div class="evolucao-content">
+        <div class="timeline-container">
+            <div class="timeline-item fade-in" style="animation-delay: 0s;">
+                <div class="timeline-marker">1970</div>
+                <div class="timeline-content">
                     <h3>🌱 Revolução Verde</h3>
                     <p>Criação da Embrapa e início da modernização agrícola brasileira</p>
                 </div>
             </div>
             
-            <div class="evolucao-item fade-in">
-                <div class="evolucao-year">1990</div>
-                <div class="evolucao-content">
+            <div class="timeline-item fade-in" style="animation-delay: 0.2s;">
+                <div class="timeline-marker">1990</div>
+                <div class="timeline-content">
                     <h3>🚜 Mecanização em Massa</h3>
                     <p>Expansão do Plantio Direto e máquinas modernas no campo</p>
                 </div>
             </div>
             
-            <div class="evolucao-item fade-in">
-                <div class="evolucao-year">2010</div>
-                <div class="evolucao-content">
+            <div class="timeline-item fade-in" style="animation-delay: 0.4s;">
+                <div class="timeline-marker">2010</div>
+                <div class="timeline-content">
                     <h3>📡 Era Digital</h3>
                     <p>Agricultura de Precisão, GPS, Drones e primeiros sensores</p>
                 </div>
             </div>
             
-            <div class="evolucao-item fade-in">
-                <div class="evolucao-year">2025+</div>
-                <div class="evolucao-content">
+            <div class="timeline-item fade-in" style="animation-delay: 0.6s;">
+                <div class="timeline-marker">2025+</div>
+                <div class="timeline-content">
                     <h3>🤖 Agricultura 5.0</h3>
                     <p>IA, Bioinsumos, Fazendas Inteligentes e Mercado de Carbono</p>
                 </div>
@@ -229,32 +155,57 @@
     </div>
 </section>
 
-<!-- SEÇÃO SUSTENTABILIDADE COM CARDS VIBRANTES -->
+<!-- SEÇÃO TECNOLOGIA -->
+<section id="tecnologia" class="secao tecnologia-secao reverso">
+    <div class="container">
+        <div class="content-wrapper reverso">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=600" alt="Tecnologia no campo" class="secao-img fade-in">
+            <div class="texto fade-in">
+                <h2>🚜 Tecnologia no Campo</h2>
+                <p>
+                    A tecnologia é um vetor essencial para unir força produtiva e sustentabilidade no agronegócio. 
+                    Drones, sensores, irrigação inteligente e máquinas modernas ajudam os produtores a aumentar a produtividade 
+                    sem prejudicar o meio ambiente.
+                </p>
+                <p>
+                    A agricultura de precisão, com sensores, drones e satélites, permite monitorar o solo, o clima e a saúde das plantas 
+                    em tempo real, otimizando o uso de fertilizantes e defensivos agrícolas. Isso reduz desperdícios e impactos ambientais.
+                </p>
+                <p>
+                    <strong>Dados 2025:</strong> 26% da área agrícola já utiliza bioinsumos; 1/3 da área tem cobertura 4G/5G; 
+                    84,8% da população rural tem acesso à internet. A transformação digital está em aceleração!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SEÇÃO SUSTENTABILIDADE COM CARDS -->
 <section id="sustentabilidade" class="secao sustentabilidade-secao">
     <div class="container">
         <h2 class="secao-title">🌎 Sustentabilidade em Ação</h2>
         <p class="secao-subtitle">Três pilares que transformam o agro brasileiro</p>
         
-        <div class="sustentabilidade-cards">
-            <div class="sustent-card card-agua fade-in">
+        <div class="cards-grid">
+            <div class="card fade-in">
                 <div class="card-icon">💧</div>
                 <h3>Economia de Água</h3>
-                <p>Técnicas modernas como irrigação inteligente evitam desperdícios e preservam os rios.</p>
-                <div class="card-stat">Redução de 40% no consumo</div>
+                <p>Técnicas modernas como irrigação inteligente evitam desperdícios e preservam os rios, otimizando o uso de recursos hídricos.</p>
+                <p class="card-stat"><strong>Resultado:</strong> Redução de até 40% no consumo de água</p>
             </div>
             
-            <div class="sustent-card card-floresta fade-in">
+            <div class="card fade-in">
                 <div class="card-icon">🌳</div>
                 <h3>Preservação Ambiental</h3>
-                <p>Proteger florestas e animais é essencial. 65% do Brasil permanece preservado.</p>
-                <div class="card-stat">65% do território preservado</div>
+                <p>Proteger florestas e animais é essencial para o futuro. A recuperação de áreas degradadas e o manejo sustentável do solo contribuem para a biodiversidade.</p>
+                <p class="card-stat"><strong>Realidade:</strong> 65% do Brasil preservado com vegetação nativa</p>
             </div>
             
-            <div class="sustent-card card-energia fade-in">
+            <div class="card fade-in">
                 <div class="card-icon">☀️</div>
                 <h3>Energia Limpa</h3>
-                <p>A expansão de biocombustíveis ajuda a reduzir emissões de gases de efeito estufa.</p>
-                <div class="card-stat">48% de energia renovável</div>
+                <p>A expansão de biocombustíveis e energias renováveis ajuda a reduzir emissões de gases de efeito estufa.</p>
+                <p class="card-stat"><strong>Potencial:</strong> 48% da matriz energética é renovável</p>
             </div>
         </div>
     </div>
@@ -267,23 +218,20 @@
         <p class="secao-subtitle">Teste seus conhecimentos sobre agronegócio sustentável!</p>
         
         <div class="quiz-container">
-            <button id="start-quiz" class="btn btn-primary">🚀 Iniciar Quiz</button>
+            <button id="start-quiz" class="btn btn-primary">Iniciar Quiz</button>
             
             <div id="quiz-content" class="quiz-content" style="display: none;">
-                <div class="quiz-progress">
-                    <div id="progress-bar" class="progress-bar"></div>
-                </div>
                 <div class="quiz-question">
                     <h3 id="question-text"></h3>
                     <div id="options-container"></div>
                 </div>
-                <button id="next-btn" class="btn btn-secondary" style="display: none;">Próxima Pergunta →</button>
+                <button id="next-btn" class="btn btn-secondary" style="display: none;">Próxima Pergunta</button>
             </div>
             
             <div id="quiz-result" class="quiz-result" style="display: none;">
-                <h3>🎉 Resultado Final</h3>
+                <h3>Resultado Final</h3>
                 <p id="result-text"></p>
-                <button onclick="location.reload()" class="btn btn-primary">Recomeçar Quiz</button>
+                <button onclick="location.reload()" class="btn btn-primary">Recomeçar</button>
             </div>
         </div>
     </div>
@@ -293,23 +241,23 @@
 <section class="secao mensagem-final">
     <div class="container">
         <h2>🌱 O Futuro Está em Nossas Mãos</h2>
-        <p id="mensagem" class="mensagem-texto">
+        <p id="mensagem">
             O futuro do campo depende da união entre inovação, sustentabilidade e pessoas. 
             O agro forte é aquele que produz com respeito à natureza, gerando alimento, emprego e esperança para as gerações futuras.
         </p>
-        <button onclick="mostrarMensagem()" class="btn btn-primary pulse">✨ Mostrar Mensagem Especial</button>
+        <button onclick="mostrarMensagem()" class="btn btn-primary">Mostrar Mensagem Especial</button>
     </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-    <p>🌱 Projeto desenvolvido para o Agrinho 2026 🌱</p>
+    <p>Projeto desenvolvido para o Agrinho 2026 🌱</p>
     <p style="font-size: 0.85rem; margin-top: 10px; opacity: 0.8;">
-        Fontes: GOV.BR, IPEA, CropLife Brasil, Embrapa, TOTVS | Imagens: Unsplash
+        Fontes: GOV.BR, IPEA, CropLife Brasil, Embrapa, TOTVS
     </p>
 </footer>
 
-<script src="script_visual.js"></script>
+<script src="script_novo.js"></script>
 
 </body>
 </html>
