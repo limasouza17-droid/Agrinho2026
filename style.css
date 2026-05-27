@@ -222,7 +222,7 @@ body {
 
 /* SEÇÕES */
 .secao {
-    padding: 80px 20px;
+    padding: 100px 20px;
     position: relative;
 }
 
@@ -275,13 +275,16 @@ body {
 
 .secao-img {
     width: 100%;
+    height: 400px;
+    object-fit: cover;
     border-radius: 15px;
     box-shadow: var(--card-shadow);
     transition: var(--transition);
 }
 
 .secao-img:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
 }
 
 /* PROBLEMA x SOLUÇÃO */
@@ -424,7 +427,7 @@ body {
 
 .card {
     background: white;
-    padding: 30px;
+    padding: 40px 30px;
     border-radius: 15px;
     box-shadow: var(--card-shadow);
     transition: var(--transition);
@@ -433,8 +436,8 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+    transform: scale(1.03) translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
 }
 
 .card-icon {
@@ -461,6 +464,51 @@ body {
     color: var(--primary-color);
     font-weight: 600;
     margin-top: 15px;
+}
+
+/* BENEFÍCIOS SEÇÃO */
+.beneficios-secao {
+    background: linear-gradient(135deg, #f0f8f4 0%, #ffffff 100%);
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.beneficio-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+    text-align: center;
+    border-left: 5px solid var(--secondary-color);
+}
+
+.beneficio-card:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 14px 35px rgba(244, 162, 97, 0.25);
+}
+
+.beneficio-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.beneficio-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.beneficio-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 /* SUSTENTABILIDADE SEÇÃO */
