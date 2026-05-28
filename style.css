@@ -287,6 +287,20 @@ body {
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
 }
 
+/* IMAGENS COM CRÉDITO */
+.imagem-com-credito {
+    position: relative;
+}
+
+.credito-imagem {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 8px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.8;
+}
+
 /* PROBLEMA x SOLUÇÃO */
 .problema-solucao {
     background: linear-gradient(135deg, #ffffff 0%, #f0f8f4 100%);
